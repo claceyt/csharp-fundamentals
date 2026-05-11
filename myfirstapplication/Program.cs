@@ -1,4 +1,5 @@
 ﻿using myfirstapplication;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 Console.WriteLine("Hello, World!");
 
@@ -18,3 +19,16 @@ void HouseExample()
     House myHouse = new House();
     myHouse.DoorOpenClose();
 }
+void MyLocalFunction()
+{
+    This Local Function is for my first exercise lab.
+}
+{
+    Console.WriteLine(This is my first sentence);
+Console.WriteLine(I am new to CSharp);
+Console.WriteLine(This CSharp course is cool);
+Console.WriteLine(I am learning stuff every day);
+    }
+
+
+

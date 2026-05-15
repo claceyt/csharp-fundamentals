@@ -17,7 +17,23 @@ inside that member.
 
 // Lesson Examples
 //HouseExample();
-Lesson1Example()
+// Lesson1Example()
+Lesson2Example();
+
+// lesson 2 Strings
+void Lesson2Example()
+{
+    lesson2 myLesson2 = new lesson2();
+    myLesson2.MyTrimExample();
+        int able = myLesson2.myStringLength();
+    myLesson2.MyEqualsExample("hello world");
+    Console.WriteLine(able);
+    myLesson2.MyExampleChar();
+    Console.WriteLine(myLesson2.MyEscapeExample());
+    myLesson2.MyJoinedStrings("CSharp", "Rules");
+    Console.WriteLine(myLesson2.MyInterpolationExample("pizza", 3));
+    myLesson2.MyOtherInterpolation();
+}
 
 void HouseExample();
 {

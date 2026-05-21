@@ -1,5 +1,5 @@
 ﻿
-namespace myfirstapplication;
+namespace Myfirstapplication;
 
 internal class House
     {
@@ -10,7 +10,7 @@ internal class House
 
     public void DoorOpenClose()
     {
-        Console.WriteLine("My door is open.")
+        Console.WriteLine("My door is open.");
     }
 
     }

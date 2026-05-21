@@ -2,5 +2,5 @@
   <Folder Name="/Solution Items/">
     <File Path="../README.md" />
   </Folder>
-  <Project Path="myfirstapplication.csproj" />
+  <Project Path="myfirstapplication.csproj" DisplayName="Myfirstapplication" />
 </Solution>

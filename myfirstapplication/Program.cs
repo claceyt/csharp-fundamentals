@@ -1,4 +1,4 @@
-﻿using myfirstapplication;
+﻿using Myfirstapplication;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 //Console.WriteLine("Hello, World!");
@@ -23,7 +23,7 @@ Lesson2Example();
 // lesson 2 Strings
 void Lesson2Example()
 {
-    lesson2 myLesson2 = new lesson2();
+    Lesson2 myLesson2 = new Lesson2();
     myLesson2.MyTrimExample();
         int able = myLesson2.myStringLength();
     myLesson2.MyEqualsExample("hello world");
@@ -35,27 +35,26 @@ void Lesson2Example()
     myLesson2.MyOtherInterpolation();
 }
 
-void HouseExample();
+void HouseExample()
 {
    House myHouse = new House();
    myHouse.DoorOpenClose();
 }
+
+// This Local Function is for my first exercise lab.
 void MyLocalFunction()
 {
-    // This Local Function is for my first exercise lab.
-}
-{
-    Console.WriteLine(This is my first sentence);
-Console.WriteLine(I am new to CSharp);
-Console.WriteLine(This CSharp course is cool);
-Console.WriteLine(I am learning stuff every day);
-    }
+    Console.WriteLine("This is my first sentence");
+    Console.WriteLine("I am new to CSharp");
+    Console.WriteLine("This CSharp course is cool");
+    Console.WriteLine("I am learning stuff every day");
+ }
 
 // Lesson 1 Value Types
 void Lesson1Example()
 {
     Lesson1 myLesson = new Lesson1();
-    myLesson.intMinMax();
+    myLesson.IntMinMax();
     myLesson.IntegralExample();
     myLesson.ConvertFloatToInt();
     myLesson.LongFromInt();

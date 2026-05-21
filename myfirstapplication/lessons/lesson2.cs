@@ -1,11 +1,11 @@
 ﻿
 
-namespace myfirstapplication;
+namespace Myfirstapplication;
 
 /*
  This class goes over strings
  */
-internal class lesson2
+internal class Lesson2
 {
     string myString = "Hello world";
 

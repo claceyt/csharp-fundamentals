@@ -1,66 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace myfirstapplication.exercises
+namespace Myfirstapplication;
+
+internal class Exercise1
 {
-    internal class Exercise1
+    public void Integral()
     {
-        public void Integral()
-        {
-            // value of 35
-            int value1 = 35; // decimal
-            int value2 = 0x23; // hexadecimal
-            int value3 = 100011; // binary
-            Console.WriteLine(value1);
-            Console.WriteLine(value2);
-            Console.WriteLine(value3);
-        }
-
-        public void ConvertbyteToInt()
-        {
-            int converted = (int)myByte; // byte
-            Console.WriteLine(converted);
-        }
-{
-
-        public void ConvertshortTolong()
-        {
-            int converted = (int)myshort; // short
-            Console.WriteLine(converted);
-        }
-
-        public void ConvertintTofloat()
-        {
-            int converted = (int)myInt; // int
-            Console.WriteLine(converted);
-        }
-
-        public void ConvertdoubleTolong()
-        {
-            int converted = (int)myDouble; // double
-            Console.WriteLine(converted);
-        }
-
-        public void ConvertfloatToInt()
-        {
-            int converted = (int)myFloat; // float
-            Console.WriteLine(converted);
-        }
-
-        public void ConvertlongToshort()
-        {
-            int converted = (int)mylong; // long
-            Console.WriteLine(converted);
-        }
-
-        //int range -2,147,483,648 to 2,147,483,647
-        int myInt = 3500;
-
-        public void IntMinMax()
-        {
-            Console.WriteLine(Int32.MinValue);
-            Console.WriteLine(Int32.MaxValue);
-        }
+        // value of 35
+        int value1 = 35; // decimal
+        int value2 = 0x23; // hexadecimal
+        int value3 = 100011; // binary
+        Console.WriteLine(value1);
+        Console.WriteLine(value2);
+        Console.WriteLine(value3);
     }
+
+    public void Task2(byte num1, short num2, int num3)
+    {
+        int value = num1;
+        int value2 = num2;
+        int value3 = num3;
+        Console.WriteLine(value);
+        Console.WriteLine(value2);
+        Console.WriteLine(value3);
+    }
+    public void Task3(double num1, float num2, long num3)
+    {
+        int converted = (int)num1; // double
+        Console.WriteLine(converted);
+        int value2 = (int)num2; // float
+        Console.WriteLine(value2);
+        int value3 = (int)num3; // long
+        Console.WriteLine(value3);
+    }
+
+    public void Task4()
+    {
+        float myFloat = 123_456.987F;
+        Console.WriteLine(myFloat);
+    }
+}

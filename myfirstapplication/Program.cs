@@ -35,11 +35,28 @@ void Lesson3Example()
     //myLesson3.BasicBooleanLogical(true, false);
     //myLesson3.BasicCompoundExample(12, 35, 9);
     // myLesson3.BasicRelationalExample("Tom", "Tim");
-    myLesson3.MyIncrDecrExample();
+    //myLesson3.MyIncrDecrExample();
+    Lesson4Example();
    // int alpha = 2147483647;
    // int total = alpha + 10;
    // Console.WriteLine(total);
 // 2147483639 9
+// Lesson 4 Control flow
+void Lesson4Example()
+    {
+        Lesson4 myLesson4 = new Lesson4();
+        //myLesson4.BasicIfStatement(11);
+        //myLesson4.BasicIfElseStatement(12);
+        //myLesson4.BasicIfElseChainStatement(10);
+        // myLesson4.BasicAndOrCondition(20, 20);
+        // Console.WriteLine(myLesson4.BasicTernaryExample(35));
+        // myLesson4.BasicSwitchStatement(3);
+        //myLesson4.BasicWhileStatement();
+        //myLesson4.BasicDoStatement();
+        // myLesson4.BasicForStatement();
+        // myLesson4.BasicForeachStatement();
+        myLesson4.BasicJumpStatement();
+    }
 }
 
 // lesson 2 Strings

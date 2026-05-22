@@ -55,7 +55,40 @@ void Lesson4Example()
         //myLesson4.BasicDoStatement();
         // myLesson4.BasicForStatement();
         // myLesson4.BasicForeachStatement();
-        myLesson4.BasicJumpStatement();
+        //myLesson4.BasicJumpStatement();
+
+
+        // Lesson 5 eperesions & pattern matching
+        void Lesson5Example()
+        {
+            Lesson5 myLesson5 = new Lesson5();          
+                // call method of mylesson5
+               // myLesson5.IsOperatorExample(34);
+
+            Lesson5Example.Del handler = myLesson5.DelegateMethod;
+           // handler("Hello CSharp");
+
+            // func delegate
+            Func<int, int> add = myLesson5.Sum;
+            // Console.WriteLine($"func example = {add(23)}");
+
+            // Lambda Expression
+            //myLesson5.LambdaSquare();
+            // myLesson5.LambdaGreeting();
+
+            // switch expression
+           string value1 = myLesson5.BasicSwitch("red");
+          //  Console.WriteLine(value1);
+          string value2 =  myLesson5.FavoriteColor("green");
+            //Console.WriteLine(value2);
+
+            // relational patern
+            // myLesson5.DrinkSize(33);
+
+            // logical paterns
+            myLesson5.TemperatureGuide(48.6);
+            myLesson5.NumberChoice(3);
+        }
     }
 }
 

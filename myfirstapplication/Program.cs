@@ -61,7 +61,7 @@ void Lesson4Example()
         // Lesson 5 eperesions & pattern matching
         void Lesson5Example()
         {
-            Lesson5 myLesson5 = new Lesson5();          
+           // Lesson5 myLesson5 = new Lesson5();          
                 // call method of mylesson5
                // myLesson5.IsOperatorExample(34);
 
@@ -86,8 +86,55 @@ void Lesson4Example()
             // myLesson5.DrinkSize(33);
 
             // logical paterns
-            myLesson5.TemperatureGuide(48.6);
-            myLesson5.NumberChoice(3);
+            // myLesson5.TemperatureGuide(48.6);
+            // myLesson5.NumberChoice(3);
+
+            Lesson6Examples();
+
+            void Lesson6Examples()
+            {
+                // default constructor
+                Lesson6 myLesson6 = new Lesson6();
+                Lesson6Examples myLessonHats = new Lesson6Examples("Cowboy", 7);
+                Lesson6Examples().TryOn theHat = myLesson6.TryOnHat;
+                theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
+
+
+                Console.WriteLine();
+
+                // constructor with 1 parameter
+                Lesson6 myOther6 = new Lesson6(22);
+
+                // constructor with 2 parameters
+                Lesson6 myHats = new Lesson6("Cowboy", 7);
+                Console.WriteLine(myHats.HatSize); // getting value
+                myHats.HatSize = 6; // setting value
+
+                // method parameter modifiers
+                int able = 33; beta = 22, charlie;
+
+                myLesson6.InExample(able);
+                myLesson6.RefExample(ref beta);
+                Console.WriteLine(beta);
+                myLesson6.OutExample(out charlie);
+                Console.WriteLine(charlie);
+
+                Console.WriteLine();
+
+                // multi-cast delegate
+                Lesson6.TryOn theNewHat, hangTheHat, multiHat;
+                theNewHat = myLesson6.TryOnHat;
+                hangTheHat = myLesson6.HangUpHat;
+                multiHat = theNewHat + hangTheHat;
+
+                theNewHat("Trying a {myLessonHats.HatType} hat");
+                hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
+                multiHat($"my {myLessonHats.HatType} hat");
+
+
+
+
+            }
         }
     }
 }

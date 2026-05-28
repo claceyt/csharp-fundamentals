@@ -1,4 +1,4 @@
-﻿namespace myfirstapplication;
+﻿namespace Myfirstapplication;
 
 /*
  this lesson goes over expressions & pattern matching.
@@ -8,7 +8,7 @@ internal class Lesson5
 {
 
     // delegate
-    public delegate void del(string message);
+    public delegate void Del(string message);
 
 
     /*
@@ -25,7 +25,7 @@ internal class Lesson5
     /*
      create a method for delegate example
      */
-    public void DelegateMethod(string method)
+    public void DelegateMethod(string message)
     {
         Console.WriteLine(message);
     }
@@ -45,7 +45,7 @@ internal class Lesson5
     public void LambdaSquare()
     {
         Func<int, int> square = able => able * able;
-        
+
         Console.WriteLine(square(4));
     }
 
@@ -66,7 +66,7 @@ internal class Lesson5
     /* Basic switch */
     public string BasicSwitch(string able)
     {
-        switch(able)
+        switch (able)
         {
             case "blue":
                 return "Favorite color is blue";
@@ -89,7 +89,7 @@ internal class Lesson5
             "green" => "Favorite color is green",
             _ => "Not sure"
         };
-      
+
         return result;
     }
 
@@ -103,7 +103,7 @@ internal class Lesson5
             <= 20 => "Can",
             <= 32 => "Bottle",
             <= 64 => "Big Gulp",
-           _ => "We dont have that size."
+            _ => "We dont have that size."
         };
         Console.WriteLine(result);
     }

@@ -1,5 +1,5 @@
 ﻿
-namespace myfirstapplication;
+namespace Myfirstapplication;
 /*
  constructors, methods, & more
  */
@@ -18,9 +18,9 @@ internal class Lesson6
     {
         get { return _hatType; }
         set { _hatType = value; }
-        }
+    }
 
-        public int HatSize
+    public int HatSize
     {
         get { return _hatSize; }
         set { _hatSize = value; }
@@ -33,7 +33,7 @@ internal class Lesson6
     {
         //  Console.WriteLine("Hello Lesson 6");
         TryOnAnotherHat tryHat = TryOnHat;
-        TryALargerHat("Fadora", 7, tryhat);
+        TryALargeHat("Fadora", 7, tryHat);
     }
 
     /* constructor with 1 parameter */

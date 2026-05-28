@@ -1,44 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
+﻿
 
-namespace myfirstapplication.exercises
+namespace Myfirstapplication;
+
+internal class Exercise6
 {
-    internal class Exercise6
+    private int _showSize;
+    private string _shoeType;
+    public Exercise6(int showSize, string shoeType)
     {
-        private int _showSize;
-            private string _shoeType;
-        public Exercise6(int showSize, string shoeType)
-        {
-            _showSize = showSize;
-            _shoeType = shoeType;
-        }
-
-        public class ExerciseClass()
-        {
-            private int Integral
-            {
-                get { return Integral; }
-                set { Intrgral = value; }
-                
-            }
-        }
-        public delegate void TryOn(string message);
-        static void Main(string[] args)
-        {
-            TryOn testDelegate = new TryOn(DisplayMessage);
-            testDelegate("Testing the TryOn Delegate");
-            Public static void DisplayMessage(string message)
-            {
-                Console.WriteLine(message);
-            }
-        }
-
-
-
-
-
-
+        _showSize = showSize;
+        _shoeType = shoeType;
     }
+
+    public int ShowSize
+    {
+        get { return _showSize; }
+        set { _showSize = value; }
+    }
+
+    public string ShoeType
+    {
+        get { return _shoeType; }
+        set { _shoeType = value; }
+    }
+
+
+
+    public delegate void TryOn(string message);
+
+    public void DisplayMessage(string message)
+    {
+        Console.WriteLine(message);
+    }
+
+
+
+
+
+
+
 }

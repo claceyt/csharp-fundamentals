@@ -4,9 +4,9 @@ namespace myfirstapplication;
 
 internal class Exercise4
 {
-public void Strings(string first, string second)
+    public void Strings(string first, string second)
     {
-        if(first == second)
+        if (first == second)
         {
             Console.WriteLine("The strings are equal.");
         }
@@ -25,7 +25,7 @@ public void Strings(string first, string second)
             'g' => "good",
             'a' => "average",
             'f' => "fail",
-            = "not a valid grade"
+            _ => "not a valid grade"
         };
     }
 
@@ -39,13 +39,6 @@ public void Strings(string first, string second)
             }
         }
 
-
-
-
-
-
-
-
+    }
 }
-
 

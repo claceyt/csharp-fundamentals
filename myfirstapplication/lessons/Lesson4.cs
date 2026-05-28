@@ -1,7 +1,4 @@
-﻿
-using System.Security.Cryptography.X509Certificates;
-
-namespace myfirstapplication;
+﻿namespace Myfirstapplication;
 
 /* Lesson 4 - Control Flow Statements */
 internal class Lesson4
@@ -12,14 +9,14 @@ internal class Lesson4
         Console.WriteLine("Before if statement");
         if (value > 10)
             Console.WriteLine($"Our {value} was greater than 10.");
+        Console.WriteLine("After if Statement");
     }
-    Console.WriteLine("After if Statement");
-}
+
 
     // basif if-else statement
     public void BasicIfElseStatement(int able)
     {
-        if(able >= 15)
+        if (able >= 15)
         {
             Console.WriteLine($"Our {able} is greater than 15");
         }
@@ -36,32 +33,31 @@ internal class Lesson4
         {
             Console.WriteLine($"Our {beta} is 10.");
         }
-        else
-        { 
+        else if (beta >= 20)
+        {
             Console.WriteLine($"Our {beta} is 20");
         }
-
-            else
-            {
-                Console.WriteLine($"Our {beta} is not the same.");
-            }
-        
-
-            // basic if with boolean logical operators
-            public void BasicAndOrCondition(int charlie, int delta)
+        else
         {
-            if(charlie > 15 && delta < 30)
-            {
-                Console.WriteLine($"{charlie} and {delta}");
-            }
-            if (charlie == 18 || delta < 25) ;
-            {
-                Console.WriteLine($"{charlie} or {delta}");
-            }
+            Console.WriteLine($"Our {beta} is not the same.");
         }
+    }
 
-        // Ternary Operator
-        public bool BasicTernaryExample(int echo)
+    // basic if with boolean logical operators
+    public void BasicAndOrCondition(int charlie, int delta)
+    {
+        if (charlie > 15 && delta < 30)
+        {
+            Console.WriteLine($"{charlie} and {delta}");
+        }
+        if (charlie == 18 || delta < 25) ;
+        {
+            Console.WriteLine($"{charlie} or {delta}");
+        }
+    }
+
+    // Ternary Operator
+    public bool BasicTernaryExample(int echo)
     {
         return (echo > 30) ? true : false;
     }
@@ -69,7 +65,7 @@ internal class Lesson4
     // switch statement
     public void BasicSwitchStatement(int able)
     {
-        switch(able)
+        switch (able)
         {
             case 1:
             case 2:
@@ -92,7 +88,7 @@ internal class Lesson4
     public void BasicWhileStatement()
     {
         int fox = 0; // initialization
-        while(fox < 10)
+        while (fox < 10)
         {
             Console.WriteLine($"Number = {fox}");
             fox++; //Increment
@@ -107,13 +103,13 @@ internal class Lesson4
         {
             Console.WriteLine($"Do Number {hotel}.");
             hotel++; // increment
-        } while( hotel < 13); // condition
+        } while (hotel < 13); // condition
     }
 
     // for statement
     public void BasicForStatement()
     {
-        for(int i = 0; i < 12; i++)
+        for (int i = 0; i < 12; i++)
         {
             Console.WriteLine($"For Number = {i}");
         }
@@ -122,7 +118,7 @@ internal class Lesson4
     // foreach statement
     public void BasicForeachStatement()
     {
-        foreach(char word in "something")
+        foreach (char word in "something")
         {
             Console.WriteLine($"Char value = {word}");
         }
@@ -134,7 +130,8 @@ internal class Lesson4
         for (int i = 0; i < 10; i++)
         {
             if (i == 2)
-            { Console.WriteLine($"The {i} was skipped");
+            {
+                Console.WriteLine($"The {i} was skipped");
                 continue;
             }
             if (i == 4)

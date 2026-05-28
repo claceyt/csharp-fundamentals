@@ -9,8 +9,8 @@ internal class Lesson2
 {
     string myString = "Hello world";
 
-        // string method - trim
-        public void MyTrimExample()
+    // string method - trim
+    public void MyTrimExample()
     {
         string str = " Word ";
         // before trim
@@ -64,14 +64,14 @@ internal class Lesson2
     }
 
     // String Interpolation
-public string MyInterpolationExample(string food, int amount)
+    public string MyInterpolationExample(string food, int amount)
     {
         return $"My favorite food is {food} and I ate {amount} servings of it";
     }
 
     public void MyOtherInterpolation()
     {
-        Console.WriteLine($"{"Number", -10} {"Order", 15}");
+        Console.WriteLine($"{"Number",-10} {"Order",15}");
     }
 
 

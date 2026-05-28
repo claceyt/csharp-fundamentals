@@ -2,9 +2,9 @@
 namespace Myfirstapplication;
 
 internal class House
-    {
+{
     string foundation;
-        string roofType;
+    string roofType;
     string doorColor;
     int windowSize;
 
@@ -13,5 +13,5 @@ internal class House
         Console.WriteLine("My door is open.");
     }
 
-    }
+}
 

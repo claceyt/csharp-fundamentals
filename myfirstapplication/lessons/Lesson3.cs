@@ -1,5 +1,5 @@
 ﻿
-namespace myfirstapplication;
+namespace Myfirstapplication;
 
 /*
  This lesson goes over Operators and Overflow Checking
@@ -58,7 +58,7 @@ internal class Lesson3
     {
         //and
         Console.WriteLine(arg & arg2);
-//or
+        //or
         Console.WriteLine(arg | arg2);
         //exclusive or
         Console.WriteLine(arg ^ arg2);
@@ -69,11 +69,11 @@ internal class Lesson3
     }
 
     // Compound Assignment Opertaors
-    public void BasicCompoundExample(int val1,int val2, int val3)
+    public void BasicCompoundExample(int val1, int val2, int val3)
     {
         // val1 = 12, val2 = 35
         // same as val1 = val1 + val2 or val1 = 12 + 35
-        val1 += val2; 
+        val1 += val2;
         Console.WriteLine(val1);
 
         val2 += (val3 + val1);
@@ -84,7 +84,7 @@ internal class Lesson3
     public void BasicRelationalExample(string name, string beta)
     {
         Console.WriteLine(name == beta);
-        Console.WriteLine(name == beta); 
+        Console.WriteLine(name == beta);
     }
 
     // this method will show increment and decrement

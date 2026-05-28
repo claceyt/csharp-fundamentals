@@ -1,5 +1,4 @@
 ﻿using Myfirstapplication;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 //Console.WriteLine("Hello, World!");
 
@@ -19,15 +18,21 @@ inside that member.
 //HouseExample();
 // Lesson1Example()
 //Lesson2Example();
-Lesson3Example();
+//Lesson3Example();
+Lesson6Exercise();
 
-
+void Lesson6Exercise()
+{
+    Exercise6 myExercise6 = new Exercise6(9, "basketball");
+    Exercise6.TryOn shoe = myExercise6.DisplayMessage;
+    shoe($"I tried on {myExercise6.ShoeType} shoes that are size {myExercise6.ShowSize}");
+}
 
 //Lesson 3 Operattors and Overflow Checking
 void Lesson3Example()
 {
     Lesson3 myLesson3 = new Lesson3();
-    // myLesson3.BasicCheckedOperator(14);
+   //  myLesson3.BasicCheckedOperator(14);
     //myLesson3.BasicCheckedExample2();
     //Lesson3.BasicUnckeckedExample();
     //myLesson3.BasicMath();
@@ -36,115 +41,139 @@ void Lesson3Example()
     //myLesson3.BasicCompoundExample(12, 35, 9);
     // myLesson3.BasicRelationalExample("Tom", "Tim");
     //myLesson3.MyIncrDecrExample();
-    Lesson4Example();
-   // int alpha = 2147483647;
-   // int total = alpha + 10;
-   // Console.WriteLine(total);
-// 2147483639 9
+   // Lesson4Example();
+    // int alpha = 2147483647;
+    // int total = alpha + 10;
+    // Console.WriteLine(total);
+    // 2147483639 9
+}
 // Lesson 4 Control flow
 void Lesson4Example()
-    {
-        Lesson4 myLesson4 = new Lesson4();
-        //myLesson4.BasicIfStatement(11);
-        //myLesson4.BasicIfElseStatement(12);
-        //myLesson4.BasicIfElseChainStatement(10);
-        // myLesson4.BasicAndOrCondition(20, 20);
-        // Console.WriteLine(myLesson4.BasicTernaryExample(35));
-        // myLesson4.BasicSwitchStatement(3);
-        //myLesson4.BasicWhileStatement();
-        //myLesson4.BasicDoStatement();
-        // myLesson4.BasicForStatement();
-        // myLesson4.BasicForeachStatement();
-        //myLesson4.BasicJumpStatement();
-
-
-        // Lesson 5 eperesions & pattern matching
-        void Lesson5Example()
-        {
-           // Lesson5 myLesson5 = new Lesson5();          
-                // call method of mylesson5
-               // myLesson5.IsOperatorExample(34);
-
-            Lesson5Example.Del handler = myLesson5.DelegateMethod;
-           // handler("Hello CSharp");
-
-            // func delegate
-            Func<int, int> add = myLesson5.Sum;
-            // Console.WriteLine($"func example = {add(23)}");
-
-            // Lambda Expression
-            //myLesson5.LambdaSquare();
-            // myLesson5.LambdaGreeting();
-
-            // switch expression
-           string value1 = myLesson5.BasicSwitch("red");
-          //  Console.WriteLine(value1);
-          string value2 =  myLesson5.FavoriteColor("green");
-            //Console.WriteLine(value2);
-
-            // relational patern
-            // myLesson5.DrinkSize(33);
-
-            // logical paterns
-            // myLesson5.TemperatureGuide(48.6);
-            // myLesson5.NumberChoice(3);
-
-            Lesson6Examples();
-
-            void Lesson6Examples()
-            {
-                // default constructor
-                Lesson6 myLesson6 = new Lesson6();
-                Lesson6Examples myLessonHats = new Lesson6Examples("Cowboy", 7);
-                Lesson6Examples().TryOn theHat = myLesson6.TryOnHat;
-                theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
-
-
-                Console.WriteLine();
-
-                // constructor with 1 parameter
-                Lesson6 myOther6 = new Lesson6(22);
-
-                // constructor with 2 parameters
-                Lesson6 myHats = new Lesson6("Cowboy", 7);
-                Console.WriteLine(myHats.HatSize); // getting value
-                myHats.HatSize = 6; // setting value
-
-                // method parameter modifiers
-                int able = 33; beta = 22, charlie;
-
-                myLesson6.InExample(able);
-                myLesson6.RefExample(ref beta);
-                Console.WriteLine(beta);
-                myLesson6.OutExample(out charlie);
-                Console.WriteLine(charlie);
-
-                Console.WriteLine();
-
-                // multi-cast delegate
-                Lesson6.TryOn theNewHat, hangTheHat, multiHat;
-                theNewHat = myLesson6.TryOnHat;
-                hangTheHat = myLesson6.HangUpHat;
-                multiHat = theNewHat + hangTheHat;
-
-                theNewHat("Trying a {myLessonHats.HatType} hat");
-                hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
-                multiHat($"my {myLessonHats.HatType} hat");
-
-
-
-
-            }
-        }
-    }
+{
+    Lesson4 myLesson4 = new Lesson4();
+    //myLesson4.BasicIfStatement(11);
+    //myLesson4.BasicIfElseStatement(12);
+    //myLesson4.BasicIfElseChainStatement(10);
+    // myLesson4.BasicAndOrCondition(20, 20);
+    // Console.WriteLine(myLesson4.BasicTernaryExample(35));
+    // myLesson4.BasicSwitchStatement(3);
+    //myLesson4.BasicWhileStatement();
+    //myLesson4.BasicDoStatement();
+    // myLesson4.BasicForStatement();
+    // myLesson4.BasicForeachStatement();
+    //myLesson4.BasicJumpStatement();
 }
+
+// Lesson 5 eperesions & pattern matching
+void Lesson5Example()
+{
+    Lesson5 myLesson5 = new Lesson5();
+    // call method of mylesson5
+    // myLesson5.IsOperatorExample(34);
+
+    Lesson5.Del handler = myLesson5.DelegateMethod;
+    // handler("Hello CSharp");
+
+    // func delegate
+    Func<int, int> add = myLesson5.Sum;
+    // Console.WriteLine($"func example = {add(23)}");
+
+    // Lambda Expression
+    //myLesson5.LambdaSquare();
+    // myLesson5.LambdaGreeting();
+
+    // switch expression
+    string value1 = myLesson5.BasicSwitch("red");
+    //  Console.WriteLine(value1);
+    string value2 = myLesson5.FavoriteColor("green");
+    //Console.WriteLine(value2);
+
+    // relational patern
+    // myLesson5.DrinkSize(33);
+
+    // logical paterns
+    // myLesson5.TemperatureGuide(48.6);
+    // myLesson5.NumberChoice(3);
+}
+//  Lesson6Examples();
+Lesson7Example();
+void Lesson7Example()
+{
+    Location myLocation = new Location(34.5, 47.8);
+    Console.WriteLine(myLocation.Latitude);
+    Console.WriteLine(myLocation);
+
+    // readonly struct
+    Student myStudent = new Student(10, "Roger");
+    Console.WriteLine(myStudent);
+    Console.WriteLine(myStudent.StudentName);
+
+    // Record
+    Person person = new Person("Nancy", "Drew");
+    Console.WriteLine(person);
+    Console.WriteLine(person.LastName);
+
+    // struct record
+    Resolution res = new Resolution(1920, 1080);
+    res.CalculateRes();
+    Console.WriteLine(res);
+}
+
+
+void Lesson6Examples()
+{
+    // default constructor
+    Lesson6 myLesson6 = new Lesson6();
+    Lesson6 myLessonHats = new Lesson6("Cowboy", 7);
+    Lesson6.TryOn theHat = myLesson6.TryOnHat;
+    theHat($"I tried on a {myLessonHats.HatType} hat that was size {myLessonHats.HatSize}");
+
+
+    Console.WriteLine();
+
+    // constructor with 1 parameter
+    Lesson6 myOther6 = new Lesson6(22);
+
+    // constructor with 2 parameters
+    Lesson6 myHats = new Lesson6("Cowboy", 7);
+    Console.WriteLine(myHats.HatSize); // getting value
+    myHats.HatSize = 6; // setting value
+
+    // method parameter modifiers
+    int able = 33, beta = 22, charlie;
+
+    myLesson6.InExample(able);
+    myLesson6.RefExample(ref beta);
+    Console.WriteLine(beta);
+    myLesson6.OutExample(out charlie);
+    Console.WriteLine(charlie);
+
+    Console.WriteLine();
+
+    // multi-cast delegate
+    Lesson6.TryOn theNewHat, hangTheHat, multiHat;
+    theNewHat = myLesson6.TryOnHat;
+    hangTheHat = myLesson6.HangUpHat;
+    multiHat = theNewHat + hangTheHat;
+
+    theNewHat("Trying a {myLessonHats.HatType} hat");
+    hangTheHat($"Hanging up my {myLessonHats.HatType} hat");
+    multiHat($"my {myLessonHats.HatType} hat");
+
+
+
+
+}
+
+
+
 
 // lesson 2 Strings
 void Lesson2Example()
 {
     Lesson2 myLesson2 = new Lesson2();
     myLesson2.MyTrimExample();
-        int able = myLesson2.myStringLength();
+    int able = myLesson2.myStringLength();
     myLesson2.MyEqualsExample("hello world");
     Console.WriteLine(able);
     myLesson2.MyExampleChar();
@@ -156,8 +185,8 @@ void Lesson2Example()
 
 void HouseExample()
 {
-   House myHouse = new House();
-   myHouse.DoorOpenClose();
+    House myHouse = new House();
+    myHouse.DoorOpenClose();
 }
 
 // This Local Function is for my first exercise lab.
@@ -167,7 +196,7 @@ void MyLocalFunction()
     Console.WriteLine("I am new to CSharp");
     Console.WriteLine("This CSharp course is cool");
     Console.WriteLine("I am learning stuff every day");
- }
+}
 
 // Lesson 1 Value Types
 void Lesson1Example()

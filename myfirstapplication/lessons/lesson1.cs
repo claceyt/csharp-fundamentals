@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Myfirstapplication;
+﻿namespace Myfirstapplication;
 
 /*
  this class goes over value types.
@@ -125,7 +121,7 @@ internal class Lesson1
         Console.WriteLine(value1);
         Console.WriteLine(value2);
         Console.WriteLine(value3);
-     }
+    }
 
     // Scientific Notation
     double alpha = 6.2E-22;

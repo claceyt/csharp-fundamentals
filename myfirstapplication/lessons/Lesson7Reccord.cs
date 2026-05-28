@@ -11,9 +11,9 @@ internal record Person(string FirstName, string LastName);
  */
 
 
-    public record struct (int width, int height)
+    public record struct Resolution (int width, int height)
     {
-        public void CalculateRes(720 *1080)
+        public void CalculateRes()
         {
         Console.WriteLine(width * height);
         }

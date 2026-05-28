@@ -96,7 +96,26 @@ void Lesson5Example()
     // myLesson5.NumberChoice(3);
 }
 //  Lesson6Examples();
-Lesson7Example();
+//Lesson7Example();
+Lesson8Example();
+void Lesson8Example()
+{
+    Lesson8 myLesson8 = new Lesson8(3);
+    // calling constant directly
+    Console.WriteLine(Lesson8.DaysPerMonth);
+
+    // calculate tempurature
+    Console.WriteLine(Lesson8Static.CelciusToFahrenheight(45.6));
+
+    // static methods
+    Lesson8.DayCount = 10;
+    myLesson8.CalculateHours();
+    Lesson8.CalculateDayCount();
+    Console.WriteLine($"The calculation has been done {Lesson8.DayCount} times");
+
+    // static Lambda
+    myLesson8.CalculateHoursV2();
+}
 void Lesson7Example()
 {
     Location myLocation = new Location(34.5, 47.8);

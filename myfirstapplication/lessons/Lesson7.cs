@@ -47,7 +47,7 @@ public readonly struct Student
     public string StudentName
     {
         get { return _name; }
-       // set { _name = value; }
+        // set { _name = value; }
     }
 
     public Student(int strudentid, string StudentName)

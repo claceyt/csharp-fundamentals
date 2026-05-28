@@ -32,7 +32,7 @@ void Lesson6Exercise()
 void Lesson3Example()
 {
     Lesson3 myLesson3 = new Lesson3();
-   //  myLesson3.BasicCheckedOperator(14);
+    //  myLesson3.BasicCheckedOperator(14);
     //myLesson3.BasicCheckedExample2();
     //Lesson3.BasicUnckeckedExample();
     //myLesson3.BasicMath();
@@ -41,7 +41,7 @@ void Lesson3Example()
     //myLesson3.BasicCompoundExample(12, 35, 9);
     // myLesson3.BasicRelationalExample("Tom", "Tim");
     //myLesson3.MyIncrDecrExample();
-   // Lesson4Example();
+    // Lesson4Example();
     // int alpha = 2147483647;
     // int total = alpha + 10;
     // Console.WriteLine(total);

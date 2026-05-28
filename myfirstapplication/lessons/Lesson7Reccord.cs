@@ -9,10 +9,10 @@ internal record Person(string FirstName, string LastName);
 /*
  a record struct is a value type with simular functionality as a record class
  */
-public record struct Resolution(int width, int height)
+public record Boat(double LengthInMeters, string color, string Material)
 {
-    public void CalculateRes()
+    public void MoveAcrossWater(double speed)
     {
-        Console.WriteLine(width * height);
+        Console.WriteLine($"The {color} {Material} boat, which is {LengthInMeters} meters long, is moving across the water at {speed} knots");
     }
 } // end record

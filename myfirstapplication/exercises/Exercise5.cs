@@ -5,7 +5,7 @@ namespace myfirstapplication;
 internal class Exercise5
 {
 
-   
+
 
     public int Voltage(int current, int resistance)
     {

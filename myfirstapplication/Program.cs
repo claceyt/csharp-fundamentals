@@ -1,4 +1,5 @@
-﻿using Myfirstapplication;
+﻿using myfirstapplication;
+using Myfirstapplication;
 
 //Console.WriteLine("Hello, World!");
 
@@ -116,6 +117,7 @@ void Lesson8Example()
     // static Lambda
     myLesson8.CalculateHoursV2();
 }
+
 void Lesson7Example()
 {
     Location myLocation = new Location(34.5, 47.8);

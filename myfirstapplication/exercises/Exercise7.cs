@@ -14,9 +14,10 @@ internal struct Employee
     }
 }
 
-public record struct (int width, int height)
+public record Boat(double LengthInMeters, string color, string Material)
 {
-    public void CalculateRes()
+    public void MoveAcrossWater(double speed)
     {
-        Console.WriteLine(width * height);
+        Console.WriteLine($"The {color} {Material} boat, which is {LengthInMeters} meters long, is moving across the water at {speed} knots");
     }
+}

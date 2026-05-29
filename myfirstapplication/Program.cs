@@ -117,7 +117,48 @@ void Lesson8Example()
     // static Lambda
     myLesson8.CalculateHoursV2();
 }
-Lesson9Example();
+//Lesson9Example();
+//Lesson10Example();
+HouseUpdated();
+
+void HouseUpdated()
+{
+    // calling default
+    House myHouse = new House();
+    Console.WriteLine(myHouse.RoofType);
+    myHouse.DoorOpenClose();
+
+    // calling constructor with 2 parameters
+    House mySecond = new House("straw", "bamboo");
+    Console.WriteLine(mySecond.WindowSize);
+    mySecond.DoorOpenClose();
+
+    // calling constrictor with 4 parameters
+    House myThird = new House("dirt", "plastic", "green", 40);
+    Console.WriteLine(myThird.Foundation);
+    myThird.DoorOpenClose();
+}
+void Lesson10Example()
+{
+    Lesson10 myLesson10 = new Lesson10();
+    // normal property
+    myLesson10._FirstName = "Paul";
+    Console.WriteLine(myLesson10._FirstName);
+
+    // calling auto property
+    //myLesson10.LastName = "Smith"; // only works in lesson10 constructor
+    Console.WriteLine(myLesson10.Id); // default value
+    myLesson10.Id = 1500;
+    Console.WriteLine(myLesson10.Id); // get 1500
+
+    // expression bodied property
+    myLesson10.Address = "123 Main St.";
+    Console.WriteLine(myLesson10.Address);
+
+    // second constructor
+    Lesson10 myOther10 = new Lesson10("Ben", "Franklin", 64119);
+    Console.WriteLine(myOther10.Zipcode);
+}
 void Lesson9Example()
 {
     Lesson9 myLesson9 = new Lesson9();

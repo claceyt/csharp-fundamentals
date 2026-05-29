@@ -119,8 +119,18 @@ void Lesson8Example()
 }
 //Lesson9Example();
 //Lesson10Example();
-HouseUpdated();
+//HouseUpdated();
+Lesson11Example();
+void Lesson11Example()
+{
+    Square square = new Square();
+    double total = square.CalculateInteriorAngle();
+    Console.WriteLine(total);
 
+    Triangle triangle = new Triangle();
+    double total2 = triangle.CalculateInteriorAngle();
+    Console.WriteLine (total2);
+}
 void HouseUpdated()
 {
     // calling default

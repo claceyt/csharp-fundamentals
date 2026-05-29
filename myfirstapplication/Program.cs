@@ -117,7 +117,16 @@ void Lesson8Example()
     // static Lambda
     myLesson8.CalculateHoursV2();
 }
+Lesson9Example();
+void Lesson9Example()
+{
+    Lesson9 myLesson9 = new Lesson9();
+    Lesson9.Nested nested = new Lesson9.Nested(myLesson9);
 
+    // acess modifiers
+    myLesson9.SampleInternal();
+    myLesson9.SampleProtectedInternal();
+}
 void Lesson7Example()
 {
     Location myLocation = new Location(34.5, 47.8);

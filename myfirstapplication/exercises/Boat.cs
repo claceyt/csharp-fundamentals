@@ -8,8 +8,8 @@ namespace myfirstapplication.exercises
     {
         public Boat(string boatSize, string boatMaterial, string boatColor)
         {
-          boatSize = boatSize ;
-           boatMaterial = boatMaterial;
+            boatSize = boatSize;
+            boatMaterial = boatMaterial;
             boatColor = boatColor;
         }
 
@@ -21,5 +21,10 @@ namespace myfirstapplication.exercises
         public Boat()
                 : this("Water", "wood")
         { }
+    
+     public virtual void BoatSize()
+        {
+            Console.WriteLine($"My {BoatSize} is 35.");
+        }
     }
 }

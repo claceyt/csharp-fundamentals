@@ -17,10 +17,15 @@ namespace myfirstapplication.exercises
         public Horse(string horseShape, string horseColor)
             : this("Flowing", horseShape, horseColor)
         { }
-    
 
-    public Horse()
-            : this("Muscular", "Chestnut")
+
+        public Horse()
+                : this("Muscular", "Chestnut")
         { }
+    
+    public virtual void HorseColor()
+        {
+            Console.WriteLine($"My {HorseColor} horse is green.");
+        }
     }
 }

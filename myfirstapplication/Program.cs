@@ -120,7 +120,27 @@ void Lesson8Example()
 //Lesson9Example();
 //Lesson10Example();
 //HouseUpdated();
-Lesson11Example();
+//Lesson11Example();
+//Lesson12Example();
+CondoExample();
+void CondoExample()
+{
+    Condo myCondo = new Condo();
+    myCondo.Maintenance();
+    myCondo.DoorOpenClose();
+    Console.WriteLine(myCondo.RoofType);
+}
+
+void Lesson12Example()
+{
+    Fruit myFruit = new Fruit();
+    myFruit.EatFruit();
+
+    Apple myApple = new Apple();
+    myApple.EatFruit();
+    myFruit.EatFruit(3);
+}
+
 void Lesson11Example()
 {
     Square square = new Square();

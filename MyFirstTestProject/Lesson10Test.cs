@@ -1,4 +1,5 @@
-﻿using Myfirstapplication;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Myfirstapplication;
 namespace MyFirstTestProject
 
 {
@@ -20,8 +21,33 @@ namespace MyFirstTestProject
             Assert.AreEqual(firstName, myLesson10._FirstName);
             Assert.AreEqual(lastName, myLesson10.LastName);
             Assert.AreEqual(zipCode, myLesson10.Zipcode);
-            
-
         }
     }
+
+       
+
+namespace MyTests
+    {
+        public class Lesson10
+        {
+            public int Id { get; set; }
+        }
+
+        [TestClass]
+        public class Lesson10Tests
+        {
+            [TestMethod]
+            public void IdVerify()
+            { 
+                int id = 256;
+                Lesson10 myLesson10 = new Lesson10();
+
+                myLesson10.Id = id;
+
+                Assert.AreEqual(id, myLesson10.Id, "The Id property did not return the expected value.");
+            }
+        }
+    }
+
 }
+

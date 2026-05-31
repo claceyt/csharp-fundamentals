@@ -2,5 +2,6 @@
   <Folder Name="/Solution Items/">
     <File Path="../README.md" />
   </Folder>
-  <Project Path="myfirstapplication.csproj" DisplayName="Myfirstapplication" />
+  <Project Path="../MyFirstTestProject/MyFirstTestProject.csproj" Id="5e0112e0-5b36-4558-a404-e822d04f7158" />
+  <Project Path="myfirstapplication.csproj" />
 </Solution>

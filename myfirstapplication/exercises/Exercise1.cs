@@ -22,19 +22,22 @@ internal class Exercise1
         Console.WriteLine(value2);
         Console.WriteLine(value3);
     }
-    public void Task3(double num1, float num2, long num3)
+    public void Convert(double firstNum, float secondNum, long thirdNum)
     {
-        int converted = (int)num1; // double
-        Console.WriteLine(converted);
-        int value2 = (int)num2; // float
-        Console.WriteLine(value2);
-        int value3 = (int)num3; // long
-        Console.WriteLine(value3);
+        long doubleToLong = (long)firstNum;
+        Console.WriteLine(doubleToLong);
+            int floatToInt = (int)secondNum;
+        Console.WriteLine((int)floatToInt);
+        short longToShort = (short)thirdNum;
+        Console.WriteLine(longToShort);
     }
 
     public void Task4()
     {
-        float myFloat = 123_456.987F;
-        Console.WriteLine(myFloat);
+        string ValueA = "-9516248";
+        double ValueB = 123_456.987;
+        int ValueC = 3_500;
+        long valueD = 988_562_486;
+        decimal ValueE = -19_733.148_95m;
     }
 }

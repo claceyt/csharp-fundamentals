@@ -39,7 +39,7 @@ namespace MyTests
             [TestMethod]
             public void IdVerify()
             { 
-                int id = 256;
+                int id = 50;
                 Lesson10 myLesson10 = new Lesson10();
 
                 myLesson10.Id = id;

@@ -14,7 +14,7 @@ public enum FavoritesMovie
 
 public class Program
 {
-    public static string GetMovieRecommendations(FavoritesMovie movie)
+    public string GetMovieRecommendations(FavoritesMovie movie)
     {
         return movie switch
         {
@@ -27,36 +27,21 @@ public class Program
         };
     }
 
-    public static void Main()
+
+    public void Main()
     {
         FavoritesMovie myFav = new FavoritesMovie();
         string message = GetMovieRecommendations(myFav);
 
-        Console.WriteLine(message);
-    }
+        Console.WriteLine(message); }
 
+       
 
-    public class Movie
-    {
-        public enum FavoriteMovie
+        public  (int num, string movie) GetMovieData(FavoritesMovie movie)
         {
-            YourForma = 1,
-            Arifureta = 2,
-            TheWorldsFinestAssassin = 3,
-            LordOfMysteries = 4,
-        }
-
-        public static void Main()
-        {
-            var Result = GetMovieData(FavoritesMovie.YourForma);
-            Console.WriteLine($"{Result}");
-        }
-
-        public static (int num, string movie) GetMovieData(FavoritesMovie movieEnum)
-        {
-            int numValue = (int) movieEnum;
-            string StringValue = movieEnum.ToString();
-            return (numValue, StringValue);
+            int Value = (int) movie;
+            string StringValue = movie.ToString();
+            return (Value, StringValue);
         }
 
 
@@ -70,4 +55,3 @@ public class Program
 
 
 
-}

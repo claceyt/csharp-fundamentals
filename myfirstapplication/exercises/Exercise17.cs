@@ -4,9 +4,9 @@ namespace Myfirstapplication;
 
 internal class Exercise17
 {
-    class ThisClass
-    {
-        static void Main()
+   
+    
+        public void Main()
         {
             Console.WriteLine("Testing valid numbers (10 and 2):");
             SafeDivide(10, 2);
@@ -18,7 +18,7 @@ internal class Exercise17
 
         }
 
-        static void SafeDivide(int numerator, int denominator)
+        public void SafeDivide(int numerator, int denominator)
         {
             try
             {
@@ -32,7 +32,7 @@ internal class Exercise17
         }
 
     }
-}
+
 
  
 
@@ -42,7 +42,6 @@ internal class Exercise17
 
 public class Project
 {
-    // Auto-implemented property with a default value
     public string Color { get; set; } = "Silver";
 }
 
@@ -55,7 +54,6 @@ public class HorseManager
             throw new ArgumentNullException(nameof(horse), "Horse cannot be null.");
         }
 
-        // Output horse details
         Console.WriteLine($"Horse color: {horse.HorseColor}");
     }
 }
@@ -75,8 +73,6 @@ public class Manager
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
-
-        // This will work fine
         Horse myHorse = new Horse();
         manager.CheckHorse(myHorse);
     }

@@ -19,13 +19,13 @@ internal class Exercise14
         }
     }
 
-    public static void PrintChiefsScores()
+    public void PrintChiefsScores()
     {
         
         int[,] chiefsScores =
         {
-            { 23, 34, 43 },
-            { 34, 35, 22 }
+            { 17, 22, 24, 38, 34, 20, 10, 26, 31, 33, 35, 31, 27, 24, 16, 22, 33, 27, 21 },
+            { 9, 31, 20, 34, 23, 20, 40, 32, 26, 17, 43, 16, 9, 35, 32, 29, 14, 17, 38 }
         };
 
         Console.WriteLine("Chiefs Scores:");
@@ -39,9 +39,9 @@ internal class Exercise14
         Console.WriteLine(); 
     }
 
-    static void Scores()
+     void PrintScores()
     {
-        PrintChiefsScores();
+        PrintScores();
     }
 
 }

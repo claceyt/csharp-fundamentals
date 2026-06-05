@@ -22,9 +22,9 @@ internal class Exercise3
         // a output 138
         Console.WriteLine(10 + 32 * 12 / 3);
         // b output 168
-        Console.WriteLine(10 + 32 * 5 - 2);
+        Console.WriteLine((10 + 32) * 12 / 3);
         // c output 131
-        Console.WriteLine(10 + 121);
+        Console.WriteLine((10 + 32 * 12) / 3);
     }
 
 

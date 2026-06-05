@@ -1,35 +1,27 @@
-﻿
-
-namespace myfirstapplication;
-
-
-
-// Base class
+﻿namespace myfirstapplication;
 public class Boat
 {
-    public string Accrosswater { get; set; }
-    public string BoatSize { get; set; }
-    public string BoatColor { get; set; }
-    public string BoatMaterial { get; set; }
+    public string water { get; set; }
+    public string Size { get; set; }
+    public string Color { get; set; }
+    public string Material { get; set; }
 
     public Boat() { }
 
-    public Boat(string accrosswater, string boatSize, string boatColor, string boatMaterial)
+    public Boat(string water, string size, string color, string material)
     {
-        Accrosswater = accrosswater;
-        BoatSize = boatSize;
-        BoatColor = boatColor;
-        BoatMaterial = boatMaterial;
+        water = water;
+        Size = size;
+        Color = color;
+        Material = material;
     }
 
-    // Virtual method so it can be overridden
     public virtual void DescribeColor()
     {
-        Console.WriteLine($"My boat is {BoatColor}.");
+        Console.WriteLine($"My boat is {Color}.");
     }
 }
 
-// Derived class
 public class SailBoat : Boat
 {
     public string Row { get; set; }
@@ -41,25 +33,16 @@ public class SailBoat : Boat
     }
 
     public SailBoat(string accrosswater, string boatSize, string row)
-        : this(accrosswater, boatSize, "Stocky", "Black", row)
+        : this(accrosswater, boatSize, "Big", "Black", row)
     {
     }
 
-    // Override DescribeColor
     public override void DescribeColor()
     {
         Console.WriteLine("My sailboat is green.");
     }
 }
 
-// Another derived class
-public class FishingBoat : Boat
-{
-    public override void DescribeColor()
-    {
-        base.DescribeColor();
-        Console.WriteLine("I use this boat for fishing.");
-    }
-}
+
 
 

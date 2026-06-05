@@ -2,29 +2,40 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace myfirstapplication.exercises
+namespace myfirstapplication;
+
+public class Boat2
 {
-    internal class Boat
+
+    public string Water { get; init; }
+    public string Size { get; set; }
+    public string Color { get; set; }
+    public string Material { get; set; }
+
+
+    public Boat2(string water, string size, string color, string material)
     {
-        public Boat(string boatSize, string boatMaterial, string boatColor)
-        {
-            boatSize = boatSize;
-            boatMaterial = boatMaterial;
-            boatColor = boatColor;
-        }
-
-        public Boat(string boatSize, string boatColor)
-            : this("Across", boatSize, boatColor)
-        { }
-
-
-        public Boat()
-                : this("Water", "wood")
-        { }
-    
-     public virtual void BoatSize()
-        {
-            Console.WriteLine($"My {BoatSize} is 35.");
-        }
+        Water = Water;
+        Size = Size;
+        Color = color;
+        Material = material;
     }
+
+
+    public Boat2(string water, string size)
+        : this(water, size, color: "black", material: "Wood")
+    {
+    }
+
+
+    public Boat2()
+        : this(water: "Hard", size: "Huge")
+    {}
+
+    public string Description => $"{Water} is Hard {Size} is huge {Color} is black {Material} is wood ";
 }
+    
+ 
+
+
+    

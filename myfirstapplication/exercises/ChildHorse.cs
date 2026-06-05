@@ -1,74 +1,46 @@
-﻿
+﻿namespace Myfirstapplication;
 
-using Myfirstapplication;
-using System.Drawing;
-using System.Reflection.Metadata;
 
-namespace Myfirstapplication;
-
-using System;
-
-public class Horse
+public class Horse1
 {
-    public string HorseRunning { get; set; }
-    public string TypeOfTail { get; set; }
-    public string HorseShape { get; set; }
+    public string TailType { get; set; }
+    public string HorseSize { get; set; }
     public string HorseColor { get; set; }
+    public string HorseRunning { get; set; }
 
-    public Horse() { }
+    public Horse1() { }
 
-    public Horse(string horseRunning, string tailType, string horseShape, string horseColor)
+    public Horse1(string tailType, string horseSize, string horseColor, string horseRunning)
     {
-        HorseRunning = horseRunning;
-        TypeOfTail = tailType;
-        HorseShape = horseShape;
+        TailType = tailType;
+        HorseSize = horseSize;
         HorseColor = horseColor;
+        HorseRunning = horseRunning;
     }
 
     public virtual void DescribeColor()
     {
-        Console.WriteLine($"My horse is {HorseColor}.");
+        Console.WriteLine($"My boat is {HorseColor}.");
     }
 }
 
-public class Stallion : Horse
+public class Stallion : Horse1
 {
-    public string Clydesdale { get; set; }
+    public string Row { get; set; }
 
-    public Stallion(string horseRunning, string typeOfTail, string horseShape, string horseColor, string clydesdale)
-        : base(horseRunning, typeOfTail, horseShape, horseColor)
+    public Stallion(string tailType, string horseSize, string horseColor, string horseRunning, string row)
+        : base(tailType, horseSize, horseColor, horseRunning)
     {
-        Clydesdale = clydesdale;
+        Row = row;
     }
 
-    public Stallion(string horseRunning, string typeOfTail, string clydesdale)
-        : this(horseRunning, typeOfTail, "Stocky", "Black", clydesdale)
+    public Stallion(string tailType, string horseSize, string row)
+        : this(tailType, horseSize, "Big", "Black", row)
     {
     }
 
     public override void DescribeColor()
     {
-        Console.WriteLine("My horse is green.");
-    }
-
-    public void DescribeEating(int quantity)
-    {
-        Console.WriteLine($"I eat {quantity} horses every day.");
+        Console.WriteLine("My Stallion is green.");
     }
 }
-
-public class Horses : Horse
-{
-    public override void DescribeColor()
-    {
-        base.DescribeColor();
-        Console.WriteLine("I eat apples.");
-    }
-}
-
-
-
-
-
-
-

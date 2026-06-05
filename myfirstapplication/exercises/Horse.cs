@@ -1,31 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 
-namespace myfirstapplication.exercises
+namespace Myfirstapplication;
+
+public class Horse
 {
-    internal class Horse
-    {
-        public Horse(string tailType, string horseShape, string horseColor)
-        {
-            tailType = tailType;
-            horseShape = horseShape;
-            horseColor = horseColor;
-        }
-
-        public Horse(string horseShape, string horseColor)
-            : this("Flowing", horseShape, horseColor)
-        { }
-
-
-        public Horse()
-                : this("Muscular", "Chestnut")
-        { }
     
-    public virtual void HorseColor()
-        {
-            Console.WriteLine($"My {HorseColor} horse is green.");
-        }
+    public string TailType { get; init; }
+    public string Horseshape { get; set; }
+    public int Horsecolor { get; set; }
+    public double Horserunning { get; set; }
+
+    
+    public Horse(string tailtype, string horseshape, string horsecolor, string horserunning)
+    {
+        TailType = tailtype;
+        HorseShape = horseshape;
+        HorseColor = horsecolor;
+        HorseRunning = horserunning;
+    }
+
+    
+    public Horse(string tailtype, string horseshape)
+        : this(tailtype, horseshape, horsecolor: "black", horserunning: "20.5")
+    {
+    }
+
+    
+    public Horse()
+        : this(tailtype: "soft", horseshape: "long")
+    {
+    }
+
+    
+    public void Running()
+    {
+        Console.WriteLine(
+            $"The {HorseColor} horse with a {TailType} tail is running at {HorseRunning} miles per hour."
+        );
     }
 }
+
+
+
+
+
+
+
+
+
